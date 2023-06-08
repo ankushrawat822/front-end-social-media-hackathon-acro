@@ -28,6 +28,7 @@ export const users = [
     updatedAt: 1115211422,
     __v: 0,
   },
+
   {
     _id: userIds[1],
     firstName: "Steve",
@@ -44,6 +45,7 @@ export const users = [
     updatedAt: 1595589072,
     __v: 0,
   },
+
   {
     _id: userIds[2],
     firstName: "Some",
@@ -60,6 +62,7 @@ export const users = [
     updatedAt: 1288090662,
     __v: 0,
   },
+
   {
     _id: userIds[3],
     firstName: "Whatcha",
@@ -76,6 +79,7 @@ export const users = [
     updatedAt: 1219214568,
     __v: 0,
   },
+
   {
     _id: userIds[4],
     firstName: "Jane",
@@ -92,6 +96,7 @@ export const users = [
     updatedAt: 1493463661,
     __v: 0,
   },
+  
   {
     _id: userIds[5],
     firstName: "Harvey",

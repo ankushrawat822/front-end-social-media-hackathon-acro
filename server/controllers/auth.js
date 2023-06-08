@@ -42,8 +42,14 @@ export const register = async (req, res) => {
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
+    console.log(email + " " + password)
     const user = await User.findOne({ email: email });
-    if (!user) return res.status(400).json({ msg: "User does not exist. " });
+    if (!user) return
+    //  res.status(400).json({ msg: "User does not exist. " })
+     console.log("user not exist 1")
+     ;
+
+     console.log(email + " " + password)
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) return res.status(400).json({ msg: "Invalid credentials. " });
@@ -52,6 +58,7 @@ export const login = async (req, res) => {
     delete user.password;
     res.status(200).json({ token, user });
   } catch (err) {
+     console.log(err)
     res.status(500).json({ error: err.message });
   }
 };
